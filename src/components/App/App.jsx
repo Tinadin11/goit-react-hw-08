@@ -10,20 +10,20 @@ export default function App() {
   const [filter, setFilter] = useState("");
 
   useEffect(() => {
-    // Перевіряємо, чи є контакти в localStorage
+    // Перевірка наявності контактів в localStorage
     const savedContacts = localStorage.getItem("contacts");
 
     if (savedContacts) {
-      // Якщо є, то завантажуємо їх з localStorage
+      // Якщо наявні, то завантажуємо їх з localStorage
       setContacts(JSON.parse(savedContacts));
     } else {
-      // Якщо їх немає, використовуємо дані з contact.json
+      // якщо відсутні контакти то використовуємо дані з contact.json
       setContacts(contactsData);
     }
   }, []);
 
   useEffect(() => {
-    // Оновлюємо localStorage, коли змінюються контакти
+    // Оновлюємо localStorage при зміні контактів
     if (contacts.length > 0) {
       localStorage.setItem("contacts", JSON.stringify(contacts));
     }

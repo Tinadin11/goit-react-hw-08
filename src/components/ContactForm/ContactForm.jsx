@@ -72,65 +72,6 @@ export default function ContactForm({ onAddContact }) {
   );
 }
 
-// import { Formik, Form, Field, ErrorMessage } from "formik";
-// import * as Yup from "yup";
-// import { nanoid } from "nanoid";
-// import css from "./ContactForm.module.css";
-
-// const validationSchema = Yup.object({
-//   name: Yup.string()
-//     .min(3, "The name must contain at least 3 characters")
-//     .max(50, "The name must contain at least 50 characters")
-//     .required("Required field"),
-//   number: Yup.string()
-//     .matches(/^\d+$/, "Only numbers are allowed") // щоб ввод був тільки цифр
-//     .min(7, "The number must contain at least 7 digits")
-//     .max(15, "The number must contain at most 15 digits")
-//     .required("Required field"),
-// });
-
-// export default function ContactForm({ onAddContact }) {
-//   return (
-//     <Formik
-//       initialValues={{ name: "", number: "" }}
-//       validationSchema={validationSchema}
-//       onSubmit={(values, { resetForm }) => {
-//         const newContact = { id: nanoid(), ...values };
-//         onAddContact(newContact);
-//         resetForm();
-//       }}
-//     >
-//           <Form className={css.form}>
-//               <div className={css.inputForm}
-//         <label className={css.label
-
-//         }>
-//           Name:
-//           <Field type="text" name="name" />
-//           <ErrorMessage
-//             name="name"
-//             component="div"
-//             className={css.errorMessage}
-//           />
-//         </label>
-
-//         <label>
-//           Number:
-//           <Field type="text" name="number" />
-//           <ErrorMessage
-//             name="number"
-//             component="div"
-//             className={css.errorMessage}
-//           />
-//         </label>
-
-//         <button className={css.btn} type="submit">
-//           Add contact
-//         </button>
-//       </Form>
-//     </Formik>
-//   );
-// }
 
 //   const handleSubmit = (event) => {
 //     event.preventDefault();
