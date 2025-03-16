@@ -1,0 +1,63 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #2e2e2e;
+    color: #fafafa;
+
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact:hover {
+    transform: scale(1.03);
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.name,
+.number {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #118c9c;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #5cd5e5;
+}
+
+.btnDel {
+    background-color: #f16454;
+    color: #fafafa;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btnDel:hover {
+    background-color: #b13b2e;
+    transform: translateY(-3px);
+}
+
+.phoneLink {
+    text-decoration: none;
+    color: #fafafa;
+    transition: color 0.3s ease;
+}
+
+.phoneLink:hover {
+    color: #99aef5;
+}
