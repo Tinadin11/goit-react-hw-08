@@ -19,6 +19,8 @@
     border-color: #00bcd4;
     box-shadow: 0 0 10px rgba(0, 188, 212, 0.7);
     transform: scale(1.05);
+    background-color: #3a3a55;
+    transition: background-color 0.3s ease;
     animation: glow 1s infinite alternate;
 }
 
