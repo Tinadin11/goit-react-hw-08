@@ -2,10 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 15px;
 
     background-color: #2e2e2e;
     color: #fafafa;
 
+    width: 300px;
     padding: 12px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -22,11 +24,20 @@
     flex-direction: column;
 }
 
-.name,
+.name {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #6a5acd;
+    margin-bottom: 10px;
+
+}
+
 .number {
     display: flex;
     align-items: center;
 }
+
 
 .icon {
     margin-right: 10px;
@@ -43,7 +54,7 @@
     background-color: #f16454;
     color: #fafafa;
     border: none;
-    padding: 6px 18px;
+    padding: 6px 16px;
     border-radius: 6px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
