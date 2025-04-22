@@ -5,29 +5,31 @@ import { useDispatch } from "react-redux";
 import { addContact } from "../../redux/contactsSlice";
 import css from "./ContactForm.module.css";
 
+const contactSchema = Yup.object({
+  name: Yup.string()
+    .min(3, "The name must contain at least 3 characters")
+    .max(50, "The name must contain at most 50 characters")
+    .required("Required field"),
+  number: Yup.string()
+    .matches(/^\d+$/, "Only numbers are allowed")
+    .min(7, "The number must contain at least 7 digits")
+    .max(15, "The number must contain at most 15 digits")
+    .required("Required field"),
+});
+
+const initialValues = {
+  name: "",
+  number: "",
+};
+
 const ContactForm = () => {
-  const initialValues = {
-    name: "",
-    number: "",
-  };
   const nameFieldId = useId();
   const numberFieldId = useId();
-
-  const contactSchema = Yup.object({
-    name: Yup.string()
-      .min(3, "The name must contain at least 3 characters")
-      .max(50, "The name must contain at most 50 characters")
-      .required("Required field"),
-    number: Yup.string()
-      .matches(/^\d+$/, "Only numbers are allowed")
-      .min(7, "The number must contain at least 7 digits")
-      .max(15, "The number must contain at most 15 digits")
-      .required("Required field"),
-  });
   const dispatch = useDispatch();
 
   const handleSubmit = (values, actions) => {
-    dispatch(addContact(values.name, values.number));
+    dispatch(addContact(values));
+    actions.setSubmitting(false);
     actions.resetForm();
   };
 

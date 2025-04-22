@@ -5,10 +5,9 @@ import Swal from "sweetalert2";
 
 import css from "./Contact.module.css";
 
-export default function Contact({ id, name, number }) {
+const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
 
-  //питаю, чи дійсно користувач хоче видалити контак
   const handleDelete = async () => {
     const result = await Swal.fire({
       title: "Are you sure?",
@@ -53,38 +52,6 @@ export default function Contact({ id, name, number }) {
       </button>
     </div>
   );
-}
+};
 
-//Без попередження про видалення і бібліотеки
-// import { useDispatch } from "react-redux";
-// import { deleteContact } from "../../redux/contactsSlice";
-// import { MdPerson, MdPhone } from "react-icons/md";
-
-// import css from "./Contact.module.css";
-
-// export default function Contact({ id, name, number, onDeleteContact }) {
-//   const dispatch = useDispatch();
-
-//   return (
-//     <div className={css.contact}>
-//       <div className={css.contactDetails}>
-//         <p className={css.name}>
-//           <MdPerson className={css.icon} /> {name}
-//         </p>
-
-//         <p className={css.number}>
-//           <MdPhone className={css.icon} />
-//           <a href={`tel:${number}`} className={css.phoneLink}>
-//             {number}
-//           </a>
-//         </p>
-//       </div>
-//       <button
-//         className={css.btnDel}
-//         onClick={() => dispatch(deleteContact(id))}
-//       >
-//         Delete
-//       </button>
-//     </div>
-//   );
-// }
+export default Contact;
