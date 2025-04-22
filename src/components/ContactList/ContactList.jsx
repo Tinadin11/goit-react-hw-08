@@ -24,7 +24,8 @@ const ContactList = () => {
               <Contact {...contact} />
             </li>
           ))
-        : !loading && !error && <p>No contacts available</p>}
+        : !loading &&
+          !error && <p className={css.noContacts}>No contacts available</p>}
       {error && <ErrorMessage />}
     </ul>
   );

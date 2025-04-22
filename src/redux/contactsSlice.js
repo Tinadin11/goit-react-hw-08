@@ -40,7 +40,7 @@ const contactsSlice = createSlice({
 				state.error = null;
 				state.loading = false;
 				state.items = state.items.filter(
-					(item) => item.id !== action.payload.id
+					(item) => item.id !== action.payload
 				);
 			})
 	

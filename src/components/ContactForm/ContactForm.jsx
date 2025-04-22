@@ -11,7 +11,7 @@ const contactSchema = Yup.object({
     .max(50, "The name must contain at most 50 characters")
     .required("Required field"),
   number: Yup.string()
-    .matches(/^\d+$/, "Only numbers are allowed")
+    .matches(/^[\d\s\+\-()]+$/, "Only numbers are allowed")
     .min(7, "The number must contain at least 7 digits")
     .max(15, "The number must contain at most 15 digits")
     .required("Required field"),
@@ -39,7 +39,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       validationSchema={contactSchema}
     >
-      {({ isSubmiting }) => (
+      {({ isSubmitting }) => (
         <Form className={css.form}>
           <div className={css.inputContainer}>
             <label className={css.label} htmlFor={nameFieldId}>
@@ -73,7 +73,7 @@ const ContactForm = () => {
             />
           </div>
 
-          <button className={css.button} type="submit" disabled={isSubmiting}>
+          <button className={css.button} type="submit" disabled={isSubmitting}>
             Add contact
           </button>
         </Form>

@@ -8,6 +8,7 @@ import css from "./Contact.module.css";
 const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
 
+  //питаю, чи дійсно користувач хоче видалити контак
   const handleDelete = async () => {
     const result = await Swal.fire({
       title: "Are you sure?",

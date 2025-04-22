@@ -71,5 +71,6 @@
 }
 
 .phoneLink:hover {
-    color: #99aef5;
+    color: #f9f8db;
+    transform: scale(1.05);
 }
