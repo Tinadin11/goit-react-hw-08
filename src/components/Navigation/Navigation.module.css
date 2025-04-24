@@ -1,7 +1,6 @@
-.navBox {
+/* .navBox {
     border-bottom: 1px solid #99ddff;
-    margin-bottom: 12px;
-}
+} */
 
 .nav {
     display: flex;
@@ -16,7 +15,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
-    padding: 8px 16px;
+    padding: 10px;
     border-radius: 12px;
     transition: all 0.3s ease;
     display: flex;
@@ -40,5 +39,9 @@
         flex-direction: row;
         gap: 24px;
         margin-bottom: 0;
+    }
+
+    .link {
+        font-size: 20px;
     }
 }
