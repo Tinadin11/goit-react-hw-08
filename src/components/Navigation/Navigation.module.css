@@ -1,0 +1,44 @@
+.navBox {
+    border-bottom: 1px solid #99ddff;
+    margin-bottom: 12px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.link:hover,
+.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+@media screen and (min-width: 768px) {
+    .navBox {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .nav {
+        flex-direction: row;
+        gap: 24px;
+        margin-bottom: 0;
+    }
+}

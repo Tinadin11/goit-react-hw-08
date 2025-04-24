@@ -1,0 +1,45 @@
+.editForm {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 16px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.input {
+    margin-bottom: 12px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnCancel {
+    background-color: #44a0ac;
+    color: #fff;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btnUpdate {
+    background-color: #7d6fd3;
+    color: #fff;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+
+.btnUpdate:disabled,
+.btnUpdate:disabled {
+    background-color: #c9c4c4;
+    cursor: not-allowed;
+}

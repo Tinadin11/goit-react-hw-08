@@ -1,0 +1,13 @@
+.loginPage {
+    background-image: linear-gradient(to bottom, #fafafa, rgba(62, 118, 186, 0.7)), url(../../../public/img/bg-rp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* width: 100%; */
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+.registerPage {
+    background-image: linear-gradient(to bottom, #ffffff, rgba(58, 108, 245, 0.7)), url(../../../public/img/fon-dym-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* width: 100%; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.darkBlueTitle {
+    color: #0d47a1;
+    /* Темно-синій */
+}

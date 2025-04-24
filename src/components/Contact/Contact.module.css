@@ -4,11 +4,11 @@
     align-items: center;
     font-size: 15px;
 
-    background-color: #2e2e2e;
+    background-color: #353535;
     color: #fafafa;
 
-    width: 300px;
-    padding: 12px;
+    width: 280px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     font-weight: bold;
-    color: #6a5acd;
+    color: #988aef;
     margin-bottom: 10px;
 
 }
@@ -50,6 +50,14 @@
     color: #5cd5e5;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 10px;
+
+}
+
 .btnDel {
     background-color: #f16454;
     color: #fafafa;
@@ -62,6 +70,20 @@
 .btnDel:hover {
     background-color: #b13b2e;
     transform: translateY(-3px);
+}
+
+.btnEdit {
+    background-color: #3c97a3;
+    color: #fafafa;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btnEdit:hover {
+    background-color: #0097a7;
+    transform: translateY(-2px);
 }
 
 .phoneLink {

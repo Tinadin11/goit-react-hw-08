@@ -1,0 +1,13 @@
+.contactsPage {
+    background-image: url(../../../public/img/fon-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* width: 100%; */
+    max-width: 1200px;
+    margin: 0 auto;
+}

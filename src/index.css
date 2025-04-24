@@ -36,3 +36,31 @@ img {
 body {
   font-family: 'Inter', sans-serif;
 }
+
+.form-search {
+  text-align: center;
+  padding: 35px 0;
+}
+
+.input-search {
+  width: 320px;
+  outline: transparent;
+  padding: 10px 16px;
+  margin-bottom: 8px;
+  color: #7a7b7c;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.input-search:hover {
+  border-color: #000
+}
+
+.input-search:focus {
+  border-color: #cef1fe
+}
+
+input,
+textarea {
+  outline: none;
+}
